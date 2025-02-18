@@ -49,7 +49,7 @@ body{
 .nave_prin{
     /*relleno, margen por dentro*/
     /*padding: 1rem;*/
-    display: flex;/**/
+    display: flex;
     flex-direction: column;
     align-items: center;
     /*justify-content para filas
@@ -71,5 +71,9 @@ body{
     background-color: var(--primario);
     color: var(--obscuro);
 }
-
+.hero{
+    background-image: url("../image/hero.jpg"); /*../regresa un directorio */
+    background-repeat: no-repeat;
+    background-size: cover; /*cover cubre la iamgen con todo el tamaño posible*/
+}
 
