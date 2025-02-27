@@ -11,7 +11,29 @@
 html{
     font-size: 62,5%;  /*conversion para web*/
     font-family: Krub,Arial, Helvetica, sans-serif;
+    /*truco para model-boxes*/
+    box-sizing: border-box;
 }
+
+*, *::before, *, *::after{
+    /*truco para model-boxes*/
+    box-sizing: inherit;
+}
+
+/*tipografia de titulos*/
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1,8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
 body{
     font-size: 16px; /*el navegador tiene por defecto 16px en texto*/
 }
@@ -75,5 +97,46 @@ body{
     background-image: url("../image/hero.jpg"); /*../regresa un directorio */
     background-repeat: no-repeat;
     background-size: cover; /*cover cubre la iamgen con todo el tamaño posible*/
+     
+    /**/
+    height: 450px; /*Altura del elemento hero*/
+    position: relative; /*manipula la posicion, padre siempre debe ser relativo*/
+}
+.cont-hero{
+    position: absolute; /*tamaño del elemento pasdre, siempre debe ser absoluto*/
+    background-color: rgba(0, 0, 0, .7);/*opacidad al 70%*/
+    width: 100%;
+    height: 100%;
+
+    display: flex; /*alinea horizontal y verticalmente*/
+    flex-direction: column; /*alinea en columna*/
+    align-items: center;  /*hotizontal*/
+    justify-content: center; /*vertical*/
+}
+.cont-hero p, .cont-hero h2{
+    color: var(--blanco);
+}
+.ubicacion{
+    display: flex;
+    align-items: flex-end; /*se acomoda uno al terminar el otro*/
 }
 
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    text-decoration: none;
+    /*padding*/
+    padding: 1rem 3rem; /*valor arriba y abajo | valor a los lados*/
+    margin-top: 3rem; /*margen hacia arriba*/
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+@media (min-width: 768px){
+ .boton{
+    width: auto;
+ }
+}
