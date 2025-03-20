@@ -171,6 +171,6 @@ body{
     display: flex;
     border-radius: 100%; /*hacer que sea un circulo*/
     /*espaciado uniforme -----------desde squi le copian*/
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
