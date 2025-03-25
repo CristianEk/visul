@@ -70,47 +70,53 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt a ducimus voluptates, exercitationem eveniet ex hic eum corrupti amet consequatur. Rerum dolorum sit nisi voluptates eveniet, doloribus iure nemo ab?</p>
         </section>
         </div> <!--Cierre de div de servicios-->
-    </main>
     
     <section>
         <h2>Contacto</h2>
+        <form class="formulario">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" width="40" height="40" stroke-width="1.5"> <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path> <path d="M3 7l9 6l9 -6"></path> </svg> 
         <form>
             <fieldset><!--Campo de llenado-->
                 <legend><!--Leyenda de texto para que el usuario tenga una instruccion-->
-                Llena tus datos para establecer Contacto</legend>
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Tu nombre"> <!--placeholder es para mostrar  un texto en el campo-->
-                </div>
-                <div>
-                    <label>Telefono</label>
-                    <input type="tel" placeholder="Telefono">
-                </div>
-                <div>
-                    <label>Correo</label>
-                    <input type="mail" placeholder="Tu Correo">
-                </div>
+                Llena tus datos para establecer contacto</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Tu nombre"> <!--placeholder es para mostrar  un texto en el campo-->
+                    </div>
+                    <div class="campo">
+                        <label>Telefono</label>
+                        <input type="tel" placeholder="Telefono">
+                    </div>
+                    <div class="campo">
+                        <label>Correo</label>
+                        <input type="mail" placeholder="Tu Correo">
+                    </div>
 
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar"> <!--Boton pa enviar-->
-                </div>
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                </div><!--Cierra el div de contenedor-campos-->
+                    <div class="alinear-derecha flex">
+                        <input class="boton "w-sm-100 type="submit" value="Enviar"> <!--Boton pa enviar-->
+                    </div>
+                
             </fieldset>
         </form>
-    </section>    
+        </form>
+    </section> 
+
 
 
     <img src="https://media.tenor.com/SumAMhoE7EgAAAAM/among-us.gif"alt="Prueba" width="300" height="200"/>
     <img src="https://media1.tenor.com/m/iWHmxL5_ltAAAAAd/club-penguin-dance.gif" alt="Prueba" width="300" height="300">
-    <footer> <!--Pie de pagina-->
+</main>
+
+    <footer class="footer"> <!--Pie de pagina-->
         <p>Copyright Cristian Ek©️</p>
     </footer>
-    
+  
 
 </body>
 </html>
